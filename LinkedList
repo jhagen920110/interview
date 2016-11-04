@@ -1,3 +1,5 @@
+# this code insert node to the first
+
 class Node:
     def __init__(self, value):
         self.data = value
@@ -23,6 +25,8 @@ class List:
         while node:
             print(node.data)
             node = node.next
+    def clear(self):
+        self.__init__()
 
 
 exampleList = List()
